@@ -30,11 +30,11 @@ if (isset($_POST['submit']))
     {
         session_start();
 
-$con=mysql_connect('localhost','root','Adrika18373591SAHA');
-mysql_select_db($con,'wtm')
+$con = mysql_connect('localhost','root','Adrika18373591SAHA');
+mysql_select_db($con,'wtm');
 
 $name=$_POST['username'];
-$password $_POST['password'];
+$password = $_POST['password'];
 $s ="select * from usertable where name ='$name' &&  password ='$password'";
 $result =mysql_query($con, $s);
 
